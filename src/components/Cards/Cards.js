@@ -1,13 +1,13 @@
-import React from 'react';
-import { CardData } from '../../Data/Data';
-import Card from '../Card/Card';
-import './Cards.css';
+import React from "react";
+import { CardData } from "../../Data/Data";
+import Card from "../Card/Card";
+import "./Cards.css";
 
 const Cards = () => {
   return (
-    <div className='cards'>
+    <div className="cards">
       {CardData.map((card, id) => (
-        <div className='parentContainter'>
+        <div className="parentContainer" key={id}>
           <Card
             title={card.title}
             color={card.color}
